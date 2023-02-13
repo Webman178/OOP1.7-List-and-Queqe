@@ -88,6 +88,19 @@ public class Main {
             ts.printMechanics();
         }
 
+        System.out.println("---------------------------------------------");
+
+        ServiceStation first = new ServiceStation();
+        first.addToQ(lada);
+        first.addToQ(bmw);
+        first.addToQ(toyota);
+
+        System.out.println(first);
+
+        first.makeDiagnostic();
+        first.makeDiagnostic();
+        first.makeDiagnostic();
+
 
 
 

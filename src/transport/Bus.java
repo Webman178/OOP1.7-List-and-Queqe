@@ -16,6 +16,11 @@ public class Bus extends Transport <Mechanic, LicenseD> implements Competing {
         this.driverD = driverD;
     }
 
+    @Override
+    public boolean isNeedDiagnostic() {
+        return false;
+    }
+
     public void passDiagnostic() {
         try {
             throw new TransportTypeException("Автобус " + getBrand() + " " + getModel() + " не может проходить диагностику");

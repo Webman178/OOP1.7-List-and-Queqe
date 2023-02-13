@@ -8,6 +8,10 @@ import java.util.ArrayList;
 public abstract class Transport <T extends Mechanic, S extends Driver>{
     abstract public S getDriver();
 
+    public boolean isNeedDiagnostic() {
+        return true;
+    }
+
     abstract public void serDriver(S driver);
     private ArrayList<T> mechanics;
     public abstract void passDiagnostic();
